@@ -7,6 +7,7 @@ import fr.aimcvent.kernel.api.injector.Injectors;
 import fr.aimcvent.kernel.api.logger.Loggers;
 import fr.aimcvent.kernel.api.promise.Promises;
 import fr.aimcvent.kernel.api.service.Services;
+import fr.aimcvent.kernel.api.translation.Translations;
 import fr.aimcvent.kernel.api.utils.Environment;
 import fr.aimcvent.kernel.api.utils.Identifier;
 
@@ -53,6 +54,8 @@ public interface Kernel extends WithConfiguration {
      * @return configurations
      */
     Configurations configurations();
+
+    Translations translations();
 
     void shutdown();
 }

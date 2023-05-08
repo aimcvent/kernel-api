@@ -1,6 +1,6 @@
 package fr.aimcvent.kernel.api.service;
 
-import java.util.Set;
+import java.util.List;
 
 /**
  * Service manager to contain all the services offered by the application.
@@ -10,7 +10,7 @@ public interface Services {
      * Allows you to retrieve the list of services registered.
      * @return service collection
      */
-    Set<Service> all();
+    List<Service> all();
 
     /**
      * Used to indicate if the service exists.
