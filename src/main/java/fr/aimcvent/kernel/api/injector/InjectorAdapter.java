@@ -7,6 +7,11 @@ import fr.aimcvent.kernel.api.exception.InjectorAdapterException;
  * @param <T> The instance created
  */
 public interface InjectorAdapter<T> {
+
+    default boolean isClazz() {
+        return false;
+    }
+
     /**
      * Call through the injector to determine what to do with the created instance.
      * @param object Instance created
