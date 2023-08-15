@@ -6,6 +6,7 @@ import fr.aimcvent.kernel.api.event.Events;
 import fr.aimcvent.kernel.api.injector.Injectors;
 import fr.aimcvent.kernel.api.logger.Loggers;
 import fr.aimcvent.kernel.api.promise.Promises;
+import fr.aimcvent.kernel.api.scheduler.SchedulerBuilder;
 import fr.aimcvent.kernel.api.service.Services;
 import fr.aimcvent.kernel.api.translation.Translations;
 import fr.aimcvent.kernel.api.utils.Environment;
@@ -56,6 +57,8 @@ public interface Kernel extends WithConfiguration {
     Configurations configurations();
 
     Translations translations();
+
+    SchedulerBuilder scheduler();
 
     void shutdown();
 }
