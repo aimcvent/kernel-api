@@ -8,6 +8,7 @@ import fr.aimcvent.kernel.api.logger.Loggers;
 import fr.aimcvent.kernel.api.promise.Promises;
 import fr.aimcvent.kernel.api.scheduler.SchedulerBuilder;
 import fr.aimcvent.kernel.api.service.Services;
+import fr.aimcvent.kernel.api.settings.ServiceSettings;
 import fr.aimcvent.kernel.api.translation.Translations;
 import fr.aimcvent.kernel.api.utils.Environment;
 import fr.aimcvent.kernel.api.utils.Identifier;
@@ -55,6 +56,8 @@ public interface Kernel extends WithConfiguration {
      * @return configurations
      */
     Configurations configurations();
+
+    ServiceSettings settings();
 
     Translations translations();
 
