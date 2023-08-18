@@ -18,4 +18,6 @@ public @interface ServiceInjector {
     Class<? extends Service> clazz();
 
     String config() default "config.json";
+
+    String settings() default "settings.json";
 }
