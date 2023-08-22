@@ -1,6 +1,6 @@
 package fr.aimcvent.kernel.api.service;
 
-import java.util.logging.Logger;
+import fr.aimcvent.kernel.api.logger.Logger;
 
 /**
  * A service is a module allowing to compartmentalize a predefined task.
