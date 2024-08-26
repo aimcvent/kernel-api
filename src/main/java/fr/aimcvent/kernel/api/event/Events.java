@@ -4,6 +4,9 @@ package fr.aimcvent.kernel.api.event;
  * The event handler that contains all registered events and call them.
  */
 public interface Events {
+
+    Monitors monitors();
+
     /**
      * Allows to execute an event within the application.
      * @param event Event to call.

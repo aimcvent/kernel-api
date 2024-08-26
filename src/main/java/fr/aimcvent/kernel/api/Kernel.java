@@ -1,6 +1,7 @@
 package fr.aimcvent.kernel.api;
 
 import fr.aimcvent.kernel.api.configuration.Configurations;
+import fr.aimcvent.kernel.api.configuration.Denormalizers;
 import fr.aimcvent.kernel.api.configuration.WithConfiguration;
 import fr.aimcvent.kernel.api.event.Events;
 import fr.aimcvent.kernel.api.injector.Injectors;
@@ -16,6 +17,12 @@ import fr.aimcvent.kernel.api.utils.Identifier;
 
 public interface Kernel extends WithConfiguration {
     Identifier identifier();
+
+    /**
+     * Allows you to retrieve the kernel version.
+     * @return version
+     */
+    String version();
 
     Loggers loggers();
     /**
@@ -55,6 +62,8 @@ public interface Kernel extends WithConfiguration {
      * @return configurations
      */
     Configurations configurations();
+
+    Denormalizers denormalizers();
 
     ServiceSettings settings();
 

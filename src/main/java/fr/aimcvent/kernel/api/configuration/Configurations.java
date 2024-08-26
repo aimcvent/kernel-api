@@ -7,6 +7,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.Reader;
+import java.util.Map;
 import java.util.function.Supplier;
 
 public interface Configurations {
@@ -29,6 +30,8 @@ public interface Configurations {
     Configuration load(Service service) throws Exception;
 
     Configuration load(Service service, boolean reload) throws Exception;
+
+    Configuration load(Service service, String file) throws Exception;
 
     Configuration load(Reader reader, File file);
 
