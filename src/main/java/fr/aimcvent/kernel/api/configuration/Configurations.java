@@ -33,6 +33,8 @@ public interface Configurations {
 
     Configuration load(Service service, String file) throws Exception;
 
+    Configuration load(Service service, String file, boolean persist) throws Exception;
+
     Configuration load(Reader reader, File file);
 
     <T> T load(Class<T> clazz, String path) throws FileNotFoundException;
