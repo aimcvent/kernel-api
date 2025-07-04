@@ -2,6 +2,7 @@ package fr.aimcvent.kernel.api.event;
 
 import fr.aimcvent.kernel.api.event.service.ServiceEvent;
 import fr.aimcvent.kernel.api.service.Service;
+import fr.aimcvent.kernel.api.utils.Environment;
 
 import java.lang.annotation.*;
 
@@ -31,4 +32,6 @@ public @interface KernelEventHandler {
      * @return service
      */
     Class<? extends Service> service() default Service.class;
+
+    Environment[] environments() default {};
 }
