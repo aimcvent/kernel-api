@@ -4,9 +4,10 @@ import fr.aimcvent.kernel.api.configuration.Configurations;
 import fr.aimcvent.kernel.api.configuration.Denormalizers;
 import fr.aimcvent.kernel.api.configuration.WithConfiguration;
 import fr.aimcvent.kernel.api.event.Events;
-import fr.aimcvent.kernel.api.injector.Injectors;
+import fr.aimcvent.kernel.api.injector.InjectorService;
 import fr.aimcvent.kernel.api.logger.Logger;
 import fr.aimcvent.kernel.api.logger.Loggers;
+import fr.aimcvent.kernel.api.module.Modules;
 import fr.aimcvent.kernel.api.promise.Promises;
 import fr.aimcvent.kernel.api.scheduler.SchedulerBuilder;
 import fr.aimcvent.kernel.api.service.Services;
@@ -37,6 +38,8 @@ public interface Kernel extends WithConfiguration {
      */
     Environment env();
 
+    Modules modules();
+
     /**
      * Allows you to retrieve the service manager.
      * @return services
@@ -47,7 +50,7 @@ public interface Kernel extends WithConfiguration {
      * Allows you to retrieve the injector manager.
      * @return injectors
      */
-    Injectors injectors();
+    InjectorService injectors();
 
     /**
      * Allows you to retrieve the events manager.

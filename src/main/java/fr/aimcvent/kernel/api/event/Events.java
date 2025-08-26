@@ -19,11 +19,11 @@ public interface Events {
      * Allows you to register a series of events found in an instance.
      * @param listener The instance that contains one or more events
      */
-    void register(Object listener);
+    void register(KernelListener listener);
 
     /**
      * Allows you to unregister a series of events found in an instance.
      * @param listener The instance that contains one or more events
      */
-    void unregister(Object listener);
+    void unregister(KernelListener listener);
 }
