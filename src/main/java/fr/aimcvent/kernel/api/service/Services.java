@@ -26,6 +26,4 @@ public interface Services {
      * @param <T> key of service type
      */
     <T extends Service> T of(Class<T> clazz);
-
-    ServiceLoader loader();
 }
